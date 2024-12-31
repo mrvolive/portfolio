@@ -17,6 +17,14 @@
       }
       .project-card {
         margin-bottom: 30px;
+	transition: transform 0.5s;
+      }
+      .project-card:hover {
+	  transform: scale(1.05);
+      }
+      .head-img{
+        height: 250px;
+	object-fit: cover;
       }
       /* Style pour la modal */
       .modal-backdrop.show {
@@ -98,7 +106,7 @@
           <!-- Compétence 1 -->
           <div class="col-md-4">
             <div class="card project-card">
-		<img src="./how-to-become-a-software-developer.webp" class="card-img-top" alt="Image vectorielle représentant un développeur en train de coder une application web sur un bureau bien rangé avec un café à côté du clavier de son pc">
+		<img src="./how-to-become-a-software-developer.webp" class="card-img-top head-img" alt="Image vectorielle représentant un développeur en train de coder une application web sur un bureau bien rangé avec un café à côté du clavier de son pc">
               <div class="card-body">
                 <h5 class="card-title">C1 : Réaliser un développement d'application</h5>
 		<h6 class="card-subtitle mb2 text-muted">Partir des exigences et aller jusqu'à une application complète</h6>
@@ -126,16 +134,15 @@
                 <div class="modal-body">
                   <h3>AC 1 - Élaborer et implémenter les spécifications fonctionnelles et non fonctionnelles à partir des exigences</h3>
                   <ul>
-                    <li>J'ai commencé par une auto-formation à la pile technologique utilisée par le service, ce qui m'a permis de comprendre les exigences fonctionnelles et non fonctionnelles de l'application.</li>
-                    <li>J'ai découvert et installé l'application historique Procol, ce qui m'a donné une compréhension approfondie des spécifications fonctionnelles et non fonctionnelles de l'application.</li>
-                    <li>J'ai écrit une documentation au format AsciiDoc pour l'installation du projet Procol-Legacy sous Eclipse, ce qui a permis de clarifier les spécifications fonctionnelles et non fonctionnelles de l'application.</li>
-                    <li>J'ai débuté la réécriture de l'application, en tenant compte des spécifications fonctionnelles et non fonctionnelles, et en appliquant les principes de la Programmation Orientée Objet et du "Clean Code".</li>
+                    <li>Auto-formation à la pile technologique utilisée par le service, ce qui m'a permis de comprendre les exigences fonctionnelles et non fonctionnelles de l'application.</li>
+                    <li>Découverte et installation de l'application historique Procol, ce qui m'a donné une compréhension approfondie des spécifications fonctionnelles et non fonctionnelles de l'application.</li>
+                    <li>Écriture d'une documentation au format AsciiDoc pour l'installation du projet Procol-Legacy sous Eclipse, ce qui a permis de clarifier les spécifications fonctionnelles et non fonctionnelles de l'application.</li>
+                    <li>Début de la réécriture de l'application, en tenant compte des spécifications fonctionnelles et non fonctionnelles, et en appliquant les principes de la Programmation Orientée Objet et du "Clean Code".</li>
                   </ul>
                   <h3>AC 2 - Appliquer des principes d'accessibilité et d'ergonomie</h3>
                   <ul>
-                    <li>Bien que je n'aie pas explicitement mentionné les principes d'accessibilité et d'ergonomie dans mon travail, j'ai appliqué les principes de la Programmation Orientée Objet et du "Clean Code", qui visent à rendre le code plus lisible, maintenable et accessible.</li>
-                    <li>J'ai également utilisé des outils tels que SonarQube pour suivre les recommandations modernes de "Clean Code", ce qui a contribué à améliorer l'accessibilité et l'ergonomie de l'application.</li>
-                    <li>J'ai eu une première approche de l'application de ces principes dans le cadre du développement d'une application de gestion de continuité de service en Vue.js. J'y ai appliqué les principes d'accessibilité web essentiels :
+                    <li>Application des principes de la <i>Programmation Orientée Objet</i> et du <i>Clean Code</i>, qui visent à rendre le code plus lisible, maintenable et accessible.</li>
+                    <li>Première approche de l'application de ces principes dans le cadre du développement d'une application de gestion de continuité de service en Vue.js. J'y ai appliqué les principes d'accessibilité web essentiels :
                       <ul>
                         <li>Mise en place d'une navigation clavier efficace</li>
                         <li>Respect des contrastes de couleurs pour la lisibilité</li>
@@ -146,10 +153,10 @@
                   </ul>
                   <h3>AC 3 - Adopter de bonnes pratiques de conception et de programmation</h3>
                   <ul>
-                    <li>J'ai appliqué les principes de la Programmation Orientée Objet et du "Clean Code" pour réécrire l'application, ce qui a permis de rendre le code plus lisible, maintenable et évolutif.</li>
-                    <li>J'ai utilisé des outils tels que SonarQube pour suivre les recommandations modernes de "Clean Code", ce qui a contribué à améliorer la qualité du code.</li>
-                    <li>J'ai également utilisé des méthodes de développement telles que le TDD (Test Driven Development) pour développer les tests Dao, ce qui a permis de garantir la qualité et la fiabilité de l'application.</li>
-                    <li>J'ai structuré le projet en utilisant Maven, ce qui a permis de gérer les dépendances et de faciliter la maintenance de l'application.</li>
+                    <li>Application des principes de la <i>Programmation Orientée Objet</i> et du <i>Clean Code</i> pour réécrire l'application, ce qui a permis de rendre le code plus lisible, maintenable et évolutif.</li>
+                    <li>Utilisation d'outils tels que SonarQube pour suivre les recommandations modernes d'écriture de code, ce qui a contribué à améliorer l'accessibilité et l'ergonomie de l'application.</li>
+                    <li>Utilisation de méthodes de développement telles que le TDD (Test Driven Development) pour développer les tests Dao, ce qui a permis de garantir la qualité et la fiabilité de l'application.</li>
+                    <li>Structuration du projet en utilisant Maven, ce qui a permis de gérer les dépendances et de faciliter la maintenance de l'application. J'ai structuré le projet en différents modules pour améliorer la modularité de l'application.</li>
                   </ul>
                 </div>
                 <div class="modal-footer">
@@ -161,6 +168,7 @@
           <!-- Compétence 2 -->
           <div class="col-md-4">
             <div class="card project-card">
+		<img src="./math.webp" class="card-img-top head-img" alt="Illustrations de plusieurs formules et graphiques mathématiques">
               <div class="card-body">
                 <h5 class="card-title">C2 : Optimiser des applications</h5>
 		<h6 class="card-subtitle mb2 text-muted">Sélectionner les algorithmes adéquats pour répondre à un problème donné</h6>
@@ -226,6 +234,7 @@
           <!-- Compétence 3 -->
           <div class="col-md-4">
             <div class="card project-card">
+		<img src="./lan.jpg" class="card-img-top head-img" alt="Illustration d'un réseau local comprenant de nombreux objets connectés et un cloud">
               <div class="card-body">
                 <h5 class="card-title">C3 : Administrer des systèmes informatiques communicants complexes</h5>
 		<h6 class="card-subtitle mb2 text-muted">Déployer des services dans une architecture réseau</h6>
@@ -289,6 +298,7 @@
           <!-- Compétence 4 -->
           <div class="col-md-4">
             <div class="card project-card">
+		<img src="./data.jpg" class="card-img-top head-img" alt="une illustration d'une personne devant un écran d'ordinateur en train d'étudier des données">
               <div class="card-body">
                 <h5 class="card-title">C4 : Gérer des données de l'information</h5>
 		<h6 class="card-subtitle mb2 text-muted">Optimiser une base de données, interagir avec une application et mettre en œuvre la sécurité</h6>
@@ -352,6 +362,7 @@
           <!-- Compétence 5 -->
           <div class="col-md-4">
             <div class="card project-card">
+		<img src="./projet.jpeg" class="card-img-top head-img" alt="Illustration d'une réunion entre 4 personnes autour d'une table.">
               <div class="card-body">
                 <h5 class="card-title">C5 : Conduire un projet</h5>
 		<h6 class="card-subtitle mb2 text-muted">Appliquer une démarche de suivi de projet en fonction des besoins métiers des clients et des utilisateurs</h6>
@@ -388,6 +399,7 @@
           <!-- Compétence 6 -->
           <div class="col-md-4">
             <div class="card project-card">
+		<img src="./colab.png" class="card-img-top head-img" alt="3 personnes autour d'une table travaillant ensemble sur un ordinateur.">
               <div class="card-body">
                 <h5 class="card-title">C6 : Collaborer au sein d'une équipe informatique</h5>
 		<h6 class="card-subtitle mb2 text-muted">Situer son rôle et ses missions au sein d'une équipe informatique</h6>
