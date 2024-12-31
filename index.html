@@ -8,10 +8,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <style>
-.hero-section {
-  padding: 100px 0;
-  background-color: #f8f9fa;
-}
+      .hero-section {
+        padding: 100px 0;
+        background-color: #f8f9fa;
+      }
       .section {
         padding: 80px 0;
       }
@@ -39,9 +39,9 @@
   </head>
   <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Mon Portfolio</a>
+        <a class="navbar-brand" href="#">Portfolio d'Alternance</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -78,11 +78,12 @@
         <h2 class="text-center mb-5">À Propos de Moi</h2>
         <div class="row">
           <div class="col-md-6">
-            <img src="https://via.placeholder.com/400" alt="Profile" class="img-fluid rounded">
+            <img src="./profile.png" alt="Profile" class="img-fluid rounded">
           </div>
           <div class="col-md-6">
             <h3>Qui suis-je ?</h3>
-            <p>Professionnel polyvalent combinant expertise technique et créative, je suis animé par la résolution de problèmes et l'innovation technologique. Mon parcours atypique, enrichi par des expériences entrepreneuriales, témoigne de ma capacité d'adaptation et de ma soif d'apprentissage continue.</p>
+            <p>Professionnel polyvalent combinant expertise technique et créative, je suis animé par la résolution de problèmes et l'innovation technologique.</p>
+	    <p>Mon parcours atypique, enrichi par des expériences entrepreneuriales, témoigne de ma capacité d'adaptation et de ma soif d'apprentissage continue.</p>
             <p>En reconversion professionnelle, je cherche à combiner mes compétences techniques et mon expérience entrepreneuriale pour relever de nouveaux défis technologiques.</p>
           </div>
         </div>
@@ -97,20 +98,21 @@
           <!-- Compétence 1 -->
           <div class="col-md-4">
             <div class="card project-card">
+		<img src="./how-to-become-a-software-developer.webp" class="card-img-top" alt="Image vectorielle représentant un développeur en train de coder une application web sur un bureau bien rangé avec un café à côté du clavier de son pc">
               <div class="card-body">
                 <h5 class="card-title">C1 : Réaliser un développement d'application</h5>
-                <p class="card-text">
-                Partir des exigences et aller jusqu'à une application complète
-                <ul>
-                  <li>AC 1 - Élaborer et implémenter les spécifications fonctionnelles et non fonctionnelles à partir des exigences</li>
-                  <li>AC 2 - Appliquer des principes d'accessibilité et d'ergonomie</li>
-                  <li>AC 3 - Adopter de bonnes pratiques de conception et de programmation</li>
-                </ul>
-                </p>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-c1">
-                  Voir plus
-                </button>
+		<h6 class="card-subtitle mb2 text-muted">Partir des exigences et aller jusqu'à une application complète</h6>
               </div>
+	      <ul class="list-group list-group-flush">
+		<li class="list-group-item"><b>AC 1</b> - Élaborer et implémenter les spécifications fonctionnelles et non fonctionnelles à partir des exigences</li>
+		<li class="list-group-item"><b>AC 2</b> - Appliquer des principes d'accessibilité et d'ergonomie</li>
+		<li class="list-group-item"><b>AC 3</b> - Adopter de bonnes pratiques de conception et de programmation</li>
+	      </ul>
+	    <div class="card-footer text-center">
+	      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-c1">
+		Voir plus
+	      </button>
+	      </div>
             </div>
           </div>
           <!-- Modals -->
@@ -161,15 +163,16 @@
             <div class="card project-card">
               <div class="card-body">
                 <h5 class="card-title">C2 : Optimiser des applications</h5>
-                <p class="card-text">Sélectionner les algorithmes adéquats pour répondre à un problème donné
-                <ul>
-                  <li>AC 1 - Choisir des structures de données complexes adaptées au problème</li>
-                </ul>
-                </p>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-c2">
-                  Voir plus
-                </button>
+		<h6 class="card-subtitle mb2 text-muted">Sélectionner les algorithmes adéquats pour répondre à un problème donné</h6>
               </div>
+	      <ul class="list-group list-group-flush">
+		<li class="list-group-item"><b>AC 1</b> - Choisir des structures de données complexes adaptées au problème</li>
+	      </ul>
+	    <div class="card-footer text-center">
+	      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-c2">
+		Voir plus
+	      </button>
+	      </div>
             </div>
           </div>
           <!-- Modals -->
@@ -225,16 +228,17 @@
             <div class="card project-card">
               <div class="card-body">
                 <h5 class="card-title">C3 : Administrer des systèmes informatiques communicants complexes</h5>
-                <p class="card-text">Déployer des services dans une architecture réseau
-                <ul>
-                  <li>AC 1 - Développer des applications communicantes</li>
-                  <li>AC 2 - Utiliser la virtualisation</li>
-                </ul>
-                </p>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-c3">
-                  Voir plus
-                </button>
+		<h6 class="card-subtitle mb2 text-muted">Déployer des services dans une architecture réseau</h6>
               </div>
+	      <ul class="list-group list-group-flush">
+		<li class="list-group-item"><b>AC 1</b> - Développer des applications communicantes</li>
+		<li class="list-group-item"><b>AC 2</b> - Utiliser la virtualisation</li>
+	      </ul>
+	      <div class="card-footer text-center">
+	      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-c3">
+		Voir plus
+	      </button>
+	      </div>
             </div>
           </div>
           <!-- Modals -->
@@ -287,13 +291,61 @@
             <div class="card project-card">
               <div class="card-body">
                 <h5 class="card-title">C4 : Gérer des données de l'information</h5>
-                <p class="card-text">Optimiser une base de données, interagir avec une application et mettre en œuvre la sécurité
-                <ul>
-                  <li>AC 3 - Organiser la restitution de données à travers la programmation et la visualisation</li>
-                  <li>AC 4 - Manipuler des données hétérogènes</li>
-                </ul>
-                </p>
-                <a href="#" class="btn btn-primary">Voir plus</a>
+		<h6 class="card-subtitle mb2 text-muted">Optimiser une base de données, interagir avec une application et mettre en œuvre la sécurité</h6>
+              </div>
+	      <ul class="list-group list-group-flush">
+		<li class="list-group-item"><b>AC 3</b> - Organiser la restitution de données à travers la programmation et la visualisation</li>
+		<li class="list-group-item"><b>AC 4</b> - Manipuler des données hétérogènes</li>
+	      </ul>
+	      <div class="card-footer text-center">
+		<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-c4">
+		Voir plus
+		</button>
+	      </div>
+            </div>
+          </div>
+          <!-- Modals -->
+          <div class="modal fade" id="modal-c4" tabindex="-1" aria-labelledby="modal-c4-label" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modal-c4-label">C4 : Gérer des données de l'information</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h3>AC 3 - Organiser la restitution de données à travers la programmation et la visualisation</h3>
+                  <h4>Architecture Client-Serveur de Procol</h4>
+                  Développement d'une application Spring Boot communicant avec :
+                  <ul>
+                    <li>Une base de données PostgreSQL</li>
+                    <li>Des services REST pour l'exposition des données</li>
+                    <li>Des clients web via une API REST documentée</li>
+                  </ul>
+                  <h4>Protocoles de Communication</h4>
+                  Implémentation de différents protocoles de communication :
+                  <ul>
+                    <li>HTTP/HTTPS pour les API REST</li>
+                    <li>JDBC pour la communication avec la base de données</li>
+                  </ul>
+                  <h3>AC 4 - Manipuler des données hétérogènes</h3>
+                  <h4>Conteneurisation avec Docker</h4>
+                  Mise en place d'un environnement de développement conteneurisé :
+                  <ul>
+                    <li>Utilisation d'un container Docker pour la base PostgreSQL</li>
+                    <li>Configuration du dump de données pour les tests</li>
+                  </ul>
+                  <h4>Gestion des Environnements</h4>
+                  Configuration des différents environnements :
+                  <ul>
+                    <li>Développement local avec Docker</li>
+                    <li>Tests d'intégration automatisés</li>
+                    <li>Validation via une pipeline Jenkins</li>
+                    <li>Production</li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                </div>
               </div>
             </div>
           </div>
@@ -302,14 +354,34 @@
             <div class="card project-card">
               <div class="card-body">
                 <h5 class="card-title">C5 : Conduire un projet</h5>
-                <p class="card-text">Appliquer une démarche de suivi de projet en fonction des besoins métiers des clients et des utilisateurs
-                <ul>
-                  <li>AC 2 - Formaliser les besoins du client et de l'utilisateur</li>
-                  <li>AC 3 - Identifier les critères de faisabilité d'un projet informatique</li>
-                  <li>AC 4 - Définir et mettre en œuvre une démarche de suivi de projet</li>
-                </ul>
-                </p>
-                <a href="#" class="btn btn-primary">Voir plus</a>
+		<h6 class="card-subtitle mb2 text-muted">Appliquer une démarche de suivi de projet en fonction des besoins métiers des clients et des utilisateurs</h6>
+              </div>
+	      <ul class="list-group list-group-flush">
+		<li class="list-group-item"><b>AC 2</b> - Formaliser les besoins du client et de l'utilisateur</li>
+		<li class="list-group-item"><b>AC 3</b> - Identifier les critères de faisabilité d'un projet informatique</li>
+		<li class="list-group-item"><b>AC 4</b> - Définir et mettre en œuvre une démarche de suivi de projet</li>
+	      </ul>
+	      <div class="card-footer text-center">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-c5">
+		Voir plus
+		</button>
+	      </div>
+            </div>
+          </div>
+          <!-- Modals -->
+          <div class="modal fade" id="modal-c5" tabindex="-1" aria-labelledby="modal-c5-label" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modal-c5-label">C5 : Conduire un projet</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+		  A venir
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                </div>
               </div>
             </div>
           </div>
@@ -318,14 +390,34 @@
             <div class="card project-card">
               <div class="card-body">
                 <h5 class="card-title">C6 : Collaborer au sein d'une équipe informatique</h5>
-                <p class="card-text">Situer son rôle et ses missions au sein d'une équipe informatique
-                <ul>
-                  <li>AC 2 - Appliquer une démarche pour intégrer une équipe informatique au sein d'une organisation</li>
-                  <li>AC 3 - Mobiliser les compétences interpersonnelles pour intégrer une équipe informatique</li>
-                  <li>AC 4 - Rendre compte de son activité professionnelle</li>
-                </ul>
-                </p>
-                <a href="#" class="btn btn-primary">Voir plus</a>
+		<h6 class="card-subtitle mb2 text-muted">Situer son rôle et ses missions au sein d'une équipe informatique</h6>
+              </div>
+	      <ul class="list-group list-group-flush">
+		<li class="list-group-item"><b>AC 2</b> - Appliquer une démarche pour intégrer une équipe informatique au sein d'une organisation</li>
+		<li class="list-group-item"><b>AC 3</b> - Mobiliser les compétences interpersonnelles pour intégrer une équipe informatique</li>
+		<li class="list-group-item"><b>AC 4</b> - Rendre compte de son activité professionnelle</li>
+	      </ul>
+	      <div class="card-footer text-center">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-c6">
+		Voir plus
+		</button>
+	      </div>
+            </div>
+          </div>
+          <!-- Modals -->
+          <div class="modal fade" id="modal-c6" tabindex="-1" aria-labelledby="modal-c6-label" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modal-c6-label">C6 : Collaborer au sein d'une équipe informatique</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+		  A venir
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                </div>
               </div>
             </div>
           </div>
@@ -342,6 +434,7 @@
             <div class="card project-card">
               <div class="card-body">
                 <h5 class="card-title">Compétence 1</h5>
+		<h6 class="card-subtitle mb2 text-muted">Description du projet</h6>
                 <p class="card-text">Description du projet 1</p>
                 <a href="#" class="btn btn-primary">Voir plus</a>
               </div>
@@ -352,6 +445,7 @@
             <div class="card project-card">
               <div class="card-body">
                 <h5 class="card-title">Compétence 2</h5>
+		<h6 class="card-subtitle mb2 text-muted">Description du projet</h6>
                 <p class="card-text">Description du projet 2</p>
                 <a href="#" class="btn btn-primary">Voir plus</a>
               </div>
@@ -362,6 +456,7 @@
             <div class="card project-card">
               <div class="card-body">
                 <h5 class="card-title">Compétence 3</h5>
+		<h6 class="card-subtitle mb2 text-muted">Description du projet</h6>
                 <p class="card-text">Description du projet 3</p>
                 <a href="#" class="btn btn-primary">Voir plus</a>
               </div>
