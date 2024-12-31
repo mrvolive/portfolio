@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+.hero-section {
+  padding: 100px 0;
+  background-color: #f8f9fa;
+}
+      .section {
+        padding: 80px 0;
+      }
+      .project-card {
+        margin-bottom: 30px;
+      }
+      /* Style pour la modal */
+      .modal-backdrop.show {
+        opacity: 0.8;
+      }
+      .modal-content {
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      }
+      .modal-header {
+        border-bottom: 1px solid #dee2e6;
+        background-color: #f8f9fa;
+        border-radius: 15px 15px 0 0;
+      }
+      .modal-body {
+        padding: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Mon Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#accueil">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#apropos">À propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#semestre3">Semestre 3</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#semestre4">Semestre 4</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero-section">
+      <div class="container text-center">
+        <h1 class="display-4">Olivier</h1>
+        <p class="lead">Développeur Fullstack, spécialisé Backend</p>
+      </div>
+    </section>
+
+    <!-- À propos Section -->
+    <section id="apropos" class="section">
+      <div class="container">
+        <h2 class="text-center mb-5">À Propos de Moi</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <img src="https://via.placeholder.com/400" alt="Profile" class="img-fluid rounded">
+          </div>
+          <div class="col-md-6">
+            <h3>Qui suis-je ?</h3>
+            <p>Professionnel polyvalent combinant expertise technique et créative, je suis animé par la résolution de problèmes et l'innovation technologique. Mon parcours atypique, enrichi par des expériences entrepreneuriales, témoigne de ma capacité d'adaptation et de ma soif d'apprentissage continue.</p>
+            <p>En reconversion professionnelle, je cherche à combiner mes compétences techniques et mon expérience entrepreneuriale pour relever de nouveaux défis technologiques.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Semestres Section -->
+    <section id="semestre3" class="section bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">Semestre 3</h2>
+        <div class="row">
+          <!-- Compétence 1 -->
+          <div class="col-md-4">
+            <div class="card project-card">
+              <div class="card-body">
+                <h5 class="card-title">C1 : Réaliser un développement d'application</h5>
+                <p class="card-text">
+                Partir des exigences et aller jusqu'à une application complète
+                <ul>
+                  <li>AC 1 - Élaborer et implémenter les spécifications fonctionnelles et non fonctionnelles à partir des exigences</li>
+                  <li>AC 2 - Appliquer des principes d'accessibilité et d'ergonomie</li>
+                  <li>AC 3 - Adopter de bonnes pratiques de conception et de programmation</li>
+                </ul>
+                </p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-c1">
+                  Voir plus
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Modals -->
+          <div class="modal fade" id="modal-c1" tabindex="-1" aria-labelledby="modal-c1-label" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modal-c1-label">C1 : Réaliser un développement d'application</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h3>AC 1 - Élaborer et implémenter les spécifications fonctionnelles et non fonctionnelles à partir des exigences</h3>
+                  <ul>
+                    <li>J'ai commencé par une auto-formation à la pile technologique utilisée par le service, ce qui m'a permis de comprendre les exigences fonctionnelles et non fonctionnelles de l'application.</li>
+                    <li>J'ai découvert et installé l'application historique Procol, ce qui m'a donné une compréhension approfondie des spécifications fonctionnelles et non fonctionnelles de l'application.</li>
+                    <li>J'ai écrit une documentation au format AsciiDoc pour l'installation du projet Procol-Legacy sous Eclipse, ce qui a permis de clarifier les spécifications fonctionnelles et non fonctionnelles de l'application.</li>
+                    <li>J'ai débuté la réécriture de l'application, en tenant compte des spécifications fonctionnelles et non fonctionnelles, et en appliquant les principes de la Programmation Orientée Objet et du "Clean Code".</li>
+                  </ul>
+                  <h3>AC 2 - Appliquer des principes d'accessibilité et d'ergonomie</h3>
+                  <ul>
+                    <li>Bien que je n'aie pas explicitement mentionné les principes d'accessibilité et d'ergonomie dans mon travail, j'ai appliqué les principes de la Programmation Orientée Objet et du "Clean Code", qui visent à rendre le code plus lisible, maintenable et accessible.</li>
+                    <li>J'ai également utilisé des outils tels que SonarQube pour suivre les recommandations modernes de "Clean Code", ce qui a contribué à améliorer l'accessibilité et l'ergonomie de l'application.</li>
+                    <li>J'ai eu une première approche de l'application de ces principes dans le cadre du développement d'une application de gestion de continuité de service en Vue.js. J'y ai appliqué les principes d'accessibilité web essentiels :
+                      <ul>
+                        <li>Mise en place d'une navigation clavier efficace</li>
+                        <li>Respect des contrastes de couleurs pour la lisibilité</li>
+                        <li>Structure sémantique HTML appropriée</li>
+                        <li>Textes alternatifs pour les éléments visuels</li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <h3>AC 3 - Adopter de bonnes pratiques de conception et de programmation</h3>
+                  <ul>
+                    <li>J'ai appliqué les principes de la Programmation Orientée Objet et du "Clean Code" pour réécrire l'application, ce qui a permis de rendre le code plus lisible, maintenable et évolutif.</li>
+                    <li>J'ai utilisé des outils tels que SonarQube pour suivre les recommandations modernes de "Clean Code", ce qui a contribué à améliorer la qualité du code.</li>
+                    <li>J'ai également utilisé des méthodes de développement telles que le TDD (Test Driven Development) pour développer les tests Dao, ce qui a permis de garantir la qualité et la fiabilité de l'application.</li>
+                    <li>J'ai structuré le projet en utilisant Maven, ce qui a permis de gérer les dépendances et de faciliter la maintenance de l'application.</li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Compétence 2 -->
+          <div class="col-md-4">
+            <div class="card project-card">
+              <div class="card-body">
+                <h5 class="card-title">C2 : Optimiser des applications</h5>
+                <p class="card-text">Sélectionner les algorithmes adéquats pour répondre à un problème donné
+                <ul>
+                  <li>AC 1 - Choisir des structures de données complexes adaptées au problème</li>
+                </ul>
+                </p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-c2">
+                  Voir plus
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Modals -->
+          <div class="modal fade" id="modal-c2" tabindex="-1" aria-labelledby="modal-c2-label" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modal-c2-label">C2 : Optimiser des applications</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h3>AC 1 - Choisir des structures de données complexes adaptées au problème</h3>
+                  <h4>Utilisation de JPA et Structures de Données Optimisées</h4>
+                  <ul>
+                    <li>Implementation d’un Window Iterator pour la gestion efficace des grandes quantités de données
+                      <ul>
+                        <li>Cette structure permet de charger les résultats par "fenêtres" plutôt que tous en même temps</li>
+                        <li>Évite les problèmes de mémoire lors du traitement de grands volumes de données</li>
+                        <li>Optimise les performances en ne chargeant que les données nécessaires</li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <h4>Architecture Spring et Gestion des Entités</h4>
+                  <ul>
+                    <li>Utilisation des entités JPA avec des relations complexes
+                      <ul>
+                        <li>Mise en place de mappings One-to-Many, Many-to-Many appropriés</li>
+                        <li>Gestion optimisée du lazy loading pour éviter le problème N+1</li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <h4>Optimisation des Requêtes</h4>
+                  <ul>
+                    <li>Utilisation de Criteria API pour des requêtes dynamiques complexes</li>
+                    <li>Mise en place de projections pour ne récupérer que les données nécessaires</li>
+                  </ul>
+                  <h4>Optimisation des Batch Processing</h4>
+                  <ul>
+                    <li>Utilisation de Spring Batch pour le traitement de grands volumes de données</li>
+                    <li>Configuration des chunk sizes appropriés</li>
+                    <li>Mise en place de mécanismes de reprise sur erreur</li>
+                    <li>Gestion optimisée des transactions</li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Compétence 3 -->
+          <div class="col-md-4">
+            <div class="card project-card">
+              <div class="card-body">
+                <h5 class="card-title">C3 : Administrer des systèmes informatiques communicants complexes</h5>
+                <p class="card-text">Déployer des services dans une architecture réseau
+                <ul>
+                  <li>AC 1 - Développer des applications communicantes</li>
+                  <li>AC 2 - Utiliser la virtualisation</li>
+                </ul>
+                </p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-c3">
+                  Voir plus
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Modals -->
+          <div class="modal fade" id="modal-c3" tabindex="-1" aria-labelledby="modal-c3-label" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modal-c3-label">C3 : Administrer des systèmes informatiques communicants complexes</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h3>AC 1 - Développer des applications communicantes</h3>
+                  <h4>Architecture Client-Serveur de Procol</h4>
+                  Développement d'une application Spring Boot communicant avec :
+                  <ul>
+                    <li>Une base de données PostgreSQL</li>
+                    <li>Des services REST pour l'exposition des données</li>
+                    <li>Des clients web via une API REST documentée</li>
+                  </ul>
+                  <h4>Protocoles de Communication</h4>
+                  Implémentation de différents protocoles de communication :
+                  <ul>
+                    <li>HTTP/HTTPS pour les API REST</li>
+                    <li>JDBC pour la communication avec la base de données</li>
+                  </ul>
+                  <h3>AC 2 - Utiliser la virtualisation</h3>
+                  <h4>Conteneurisation avec Docker</h4>
+                  Mise en place d'un environnement de développement conteneurisé :
+                  <ul>
+                    <li>Utilisation d'un container Docker pour la base PostgreSQL</li>
+                    <li>Configuration du dump de données pour les tests</li>
+                  </ul>
+                  <h4>Gestion des Environnements</h4>
+                  Configuration des différents environnements :
+                  <ul>
+                    <li>Développement local avec Docker</li>
+                    <li>Tests d'intégration automatisés</li>
+                    <li>Validation via une pipeline Jenkins</li>
+                    <li>Production</li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Compétence 4 -->
+          <div class="col-md-4">
+            <div class="card project-card">
+              <div class="card-body">
+                <h5 class="card-title">C4 : Gérer des données de l'information</h5>
+                <p class="card-text">Optimiser une base de données, interagir avec une application et mettre en œuvre la sécurité
+                <ul>
+                  <li>AC 3 - Organiser la restitution de données à travers la programmation et la visualisation</li>
+                  <li>AC 4 - Manipuler des données hétérogènes</li>
+                </ul>
+                </p>
+                <a href="#" class="btn btn-primary">Voir plus</a>
+              </div>
+            </div>
+          </div>
+          <!-- Compétence 5 -->
+          <div class="col-md-4">
+            <div class="card project-card">
+              <div class="card-body">
+                <h5 class="card-title">C5 : Conduire un projet</h5>
+                <p class="card-text">Appliquer une démarche de suivi de projet en fonction des besoins métiers des clients et des utilisateurs
+                <ul>
+                  <li>AC 2 - Formaliser les besoins du client et de l'utilisateur</li>
+                  <li>AC 3 - Identifier les critères de faisabilité d'un projet informatique</li>
+                  <li>AC 4 - Définir et mettre en œuvre une démarche de suivi de projet</li>
+                </ul>
+                </p>
+                <a href="#" class="btn btn-primary">Voir plus</a>
+              </div>
+            </div>
+          </div>
+          <!-- Compétence 6 -->
+          <div class="col-md-4">
+            <div class="card project-card">
+              <div class="card-body">
+                <h5 class="card-title">C6 : Collaborer au sein d'une équipe informatique</h5>
+                <p class="card-text">Situer son rôle et ses missions au sein d'une équipe informatique
+                <ul>
+                  <li>AC 2 - Appliquer une démarche pour intégrer une équipe informatique au sein d'une organisation</li>
+                  <li>AC 3 - Mobiliser les compétences interpersonnelles pour intégrer une équipe informatique</li>
+                  <li>AC 4 - Rendre compte de son activité professionnelle</li>
+                </ul>
+                </p>
+                <a href="#" class="btn btn-primary">Voir plus</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="semestre4" class="section">
+      <div class="container">
+        <h2 class="text-center mb-5">Semestre 4</h2>
+        <div class="row">
+          <!-- Compétence 1 -->
+          <div class="col-md-4">
+            <div class="card project-card">
+              <div class="card-body">
+                <h5 class="card-title">Compétence 1</h5>
+                <p class="card-text">Description du projet 1</p>
+                <a href="#" class="btn btn-primary">Voir plus</a>
+              </div>
+            </div>
+          </div>
+          <!-- Compétence 2 -->
+          <div class="col-md-4">
+            <div class="card project-card">
+              <div class="card-body">
+                <h5 class="card-title">Compétence 2</h5>
+                <p class="card-text">Description du projet 2</p>
+                <a href="#" class="btn btn-primary">Voir plus</a>
+              </div>
+            </div>
+          </div>
+          <!-- Compétence 3 -->
+          <div class="col-md-4">
+            <div class="card project-card">
+              <div class="card-body">
+                <h5 class="card-title">Compétence 3</h5>
+                <p class="card-text">Description du projet 3</p>
+                <a href="#" class="btn btn-primary">Voir plus</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+      <p class="mb-0">© 2024 Marmedia. Tous droits réservés.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
